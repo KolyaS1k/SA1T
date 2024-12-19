@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о Студенте</title>
+    <style>
+        /* Общие стили для тела страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d; /* Тёмный фон для контраста */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Контейнер для содержимого */
+        .container {
+            text-align: center;
+        }
+
+        /* Неоновый эффект для текста */
+        .neon-text {
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #ff00de,
+                0 0 30px #ff00de,
+                0 0 40px #ff00de,
+                0 0 55px #ff00de,
+                0 0 75px #ff00de;
+            margin-bottom: 20px;
+        }
+
+        /* Стили для кнопки с неоновым эффектом */
+        .neon-button {
+            background-color: transparent;
+            border: 2px solid #ff00de;
+            color: #ff00de;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow:
+                0 0 5px #ff00de,
+                0 0 10px #ff00de,
+                0 0 20px #ff00de,
+                0 0 30px #ff00de;
+        }
+
+        .neon-button:hover {
+            background-color: #ff00de;
+            color: #fff;
+            box-shadow:
+                0 0 10px #ff00de,
+                0 0 20px #ff00de,
+                0 0 30px #ff00de,
+                0 0 40px #ff00de;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text">Мухаметзянов Данис Ильдарович</h1>
+        <h2 class="neon-text">Учебная группа: РСБО-01-23</h2>
+        <button class="neon-button" onclick="window.open('https://vk.com/id544184059', '_blank')">
+            Перейти на страницу VK
+        </button>
+    </div>
+</body>
+</html>
